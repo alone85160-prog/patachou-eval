@@ -145,6 +145,13 @@ footer {
   color: #AB874E;
 }
 
+@media (min-width: 1024px) {
+  .subcontent__contactgroup {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .contact__subcontent {
   display: flex;
   justify-content: center;
@@ -162,7 +169,6 @@ footer {
     margin: 25px;
   }
 }
-
 .contact__subcontenttitle {
   display: block;
   text-align: center;
@@ -172,6 +178,11 @@ footer {
   .contact__subcontenttitle {
     text-align: start;
     margin-top: 90px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__subcontenttitle {
+    font-size: 35px;
   }
 }
 
@@ -185,10 +196,20 @@ footer {
     width: 700px;
   }
 }
+@media (min-width: 1024px) {
+  .contact__subcontenttext {
+    width: 450px;
+  }
+}
 
 .contact__caption {
   color: black;
   margin: 25px;
+}
+@media (min-width: 1024px) {
+  .contact__caption {
+    width: 100%;
+  }
 }
 
 .caption {
@@ -330,6 +351,15 @@ span {
   display: block;
 }
 
+@media (min-width: 1024px) {
+  .promotions__groups {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .promotions__content {
   display: flex;
   justify-content: center;
@@ -343,11 +373,24 @@ span {
     margin: 20px;
   }
 }
+@media (min-width: 1024px) {
+  .promotions__content {
+    flex-direction: column;
+  }
+}
+
 .promotions__contentimage {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .promotions__contentimage {
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+  }
 }
 
 .promotions__img {
@@ -359,6 +402,11 @@ span {
     height: 300px;
   }
 }
+@media (min-width: 1024px) {
+  .promotions__img {
+    height: 400px;
+  }
+}
 
 .promotions__svg {
   height: 30px;
@@ -367,6 +415,12 @@ span {
 @media (min-width: 768px) {
   .promotions__svg {
     height: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .promotions__svg {
+    height: 35px;
+    margin-left: 10px;
   }
 }
 
@@ -385,6 +439,11 @@ span {
 .promotions__contenttext {
   text-align: start;
   margin: 10px;
+}
+@media (min-width: 1024px) {
+  .promotions__contenttext {
+    width: 600px;
+  }
 }
 
 .quality__content {

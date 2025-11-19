@@ -2,6 +2,15 @@
 
 
 
+.subcontent__contactgroup { 
+    
+        @media (min-width: $desktop-width) {
+            display: flex;
+            flex-direction: row;
+    }
+}
+
+
 
 .contact__subcontent {
     display: flex;
@@ -18,8 +27,14 @@
             margin: 25px;
             
     }
+            @media (min-width: $desktop-width) {
+                
+
+    }
 
 }
+
+
 
 .contact__subcontenttitle { 
     display: block;
@@ -28,6 +43,9 @@
     @media (min-width: $tablet-width) {
         text-align: start;
         margin-top: 90px;;
+    }
+            @media (min-width: $desktop-width) {
+                font-size: 35px;
     }
 
 }
@@ -41,12 +59,18 @@
         
 
 }
+        @media (min-width: $desktop-width) {
+            width: 450px;
+    }
 
 }
 
 .contact__caption { 
     color: black;
     margin: 25px;
+            @media (min-width: $desktop-width) {
+                width: 100%;
+    }
     
 }
 
