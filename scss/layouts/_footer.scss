@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as *;
+
+
+footer {
+    height: 700px;
+    background-color: black;
+    @media (min-width: $tablet-width) {
+        height: 300px;
+    }
+}
+.footer__page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        @media (min-width: $tablet-width) {
+            display: flex;
+            flex-direction: row;
+    }
+}
+.footer__contentlink { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: $tablet-width) {
+        margin-top: 30px;
+        width: 100%;
+
+    }
+
+}
+
+.content__footerlink { 
+    display: flex;
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer__logocontent { 
+    margin: 35px;
+    height: 50px;
+}
+
+.footer__content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        @media (min-width: $tablet-width) {
+            flex-direction: column;
+            margin-top: 50px;
+            width: 100%;
+            
+    }
+    
+}
+
+.footer__textcontent {
+    display: block;
+    color: white;
+    margin: 30px;
+    text-align: center;
+            @media (min-width: $tablet-width) {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            width: 100%;
+    }
+
+}
+
+.footer__iconscontent { 
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}

@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+
+
+.hero { 
+    background-image: url(/img/haute-couture-2.jpg);
+    height: 200px;
+    margin-top: 15px ;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            @media (min-width: $desktop-width) {
+                height: 300px;
+        }
+}
+
+.hero__content { 
+    background-color: rgba(255, 255, 255, 0.884);
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    @media (min-width: $tablet-width) {
+        height: 150px;
+        width: 550px;
+        font-size: 30px;
+    }
+            @media (min-width: $desktop-width) {
+                height: 200px;
+        }
+}
+
+span { 
+    display: block;
+}
+

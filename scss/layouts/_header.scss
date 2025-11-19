@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+
+.header { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+}
+
+.welcome__content { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    @media (min-width: $tablet-width) {
+    flex-direction: row; 
+    
+
+    }
+}
+
+.content__link { 
+    font-size: 10px;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+
+    @media (min-width: $tablet-width) {
+    margin: 10px; 
+    }
+        @media (min-width: $desktop-width) {
+            font-size: 15px;
+        }
+}
+
+.welcome__accueil { 
+    color: $primary-color;
+}
